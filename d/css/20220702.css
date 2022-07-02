@@ -1,0 +1,257 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+}
+
+.swap {
+  width: 100%;
+  height: 100%;
+}
+
+/* ########################## header ########################## */
+
+.header {
+  width: 100%;
+  height: 54px;
+  border-bottom: 1px solid #e1e1e1;
+  background-color: rgba(240,240,240,.37);
+  backdrop-filter: blur(6px);
+  display: flex;
+}
+
+.header .kart {
+  width: 182px;
+  height: 100%;
+}
+
+.header .kart .kartMain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.header .kart .kartMain .profile {
+  width: 54px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header .kart .kartMain .profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.header .middle {
+  width: calc(100% - 182px);
+  height: 100%;
+  position: relative;
+}
+
+.header .middle .frame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
+  display: flex;
+}
+
+.header .middle .frame .frame-inner {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header .middle .frame .frame-inner .frame-id {
+  width: 100%;
+  height: 25px;
+  display: flex;
+}
+
+.header .middle .frame .frame-inner .material-symbols-outlined {
+  font-weight: 200;
+  font-size: 25px;
+}
+
+.header .middle .frame .frame-inner .frame-id .frame-icon {
+  width: 25px;
+  height: 100%;
+}
+
+.header .middle .frame .frame-inner .frame-id .frame-data {
+  width: 95px;
+}
+
+.header .middle .frame .frame-inner .frame-id .frame-data span {
+  position: relative;
+  font-family: 'Rubik', sans-serif;
+  top: 1.3px;
+  margin-left: 1.1px;
+}
+
+.header .middle .frame .frame-inner.lucci .material-symbols-outlined {
+  color: #E3B105;
+}
+
+.header .middle .frame .frame-inner.coin .material-symbols-outlined {
+  color: #0549E3;
+}
+
+.header .middle .frame .frame-inner.purchase {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #EED85D;
+}
+
+.header .middle .frame .frame-inner.purchase span {
+  font-family: 'paybooc';
+  font-size: 17px;
+}
+
+.header .kart .kartMain .text-info {
+  height: 100%;
+  width: calc(100% - 54px - 6px);
+  padding-left: 6px;
+}
+
+.header .kart .kartMain .text-info .username {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.header .kart .kartMain .text-info .username span {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+
+.header .kart .kartMain .text-info .process {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 0 6px #dfdfdf;
+  border-radius: 13px;
+}
+
+.header .kart .kartMain .text-info .process .block {
+  width: 50%;
+  height: 100%;
+  background-color: #092253;
+  border-radius: 13px 0 0 13px;
+}
+
+.header .kart .kartMain .text-info .level {
+  width: 100%;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.header .kart .kartMain .text-info .level span {
+  font-family: 'Rubik', sans-serif;
+  font-size: 13px;
+}
+
+/* ############################################################ */
+
+/* ########################## container ########################## */
+
+.container {
+  width: 100%;
+  height: calc(100% - 94px);
+}
+
+/* ############################################################### */
+
+/* ########################## footer ########################## */
+
+.footer {
+  width: 100%;
+  height: 40px;
+  border-top: 1px solid #e1e1e1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .nnm, .footer .spm, .footer .cns {
+  width: auto;
+  display: flex;
+  height: 100%;
+}
+
+.footer .nnm div {
+  width: 46px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer .nnm img {
+  width: auto;
+  height: 100%;
+  max-height: 30px;
+  object-fit: cover;
+}
+
+.footer .nnm .home span, .footer .nnm .quest span {
+  font-size: 29px;
+  font-weight: 200;
+}
+
+.footer .spm > div {
+  width: auto;
+  padding: 0 14px;
+  height: 100%;
+}
+
+.footer .spm div {
+  display: flex;
+  align-items: center;
+}
+
+.footer .spm .spm-icon {
+  margin-right: 4px;
+}
+
+.footer .spm .spm-icon span {
+  font-weight: 300;
+  font-size: 27px;
+}
+
+.footer .spm .spm-text span {
+  font-size: 18px;
+  font-family: 'paybooc';
+}
+
+.footer .spm .active {
+  background-color: #397bd5;
+}
+
+.footer .spm .active .spm-icon, .footer .spm .active .spm-text {
+  color: #ffffff;
+}
+
+.footer .cns {
+  width: 138px;
+  height: 100%;
+}
+
+/* ############################################################ */
